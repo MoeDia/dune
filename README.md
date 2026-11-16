@@ -24,7 +24,7 @@ That's it. You'll only ever **click a button or type your password** — the scr
 zsh dune/mac-setup.sh --check     # confirms everything, changes nothing
 ```
 
-> Want a wallpaper? Drop any `wallpaper.png` next to `mac-setup.sh` before running. Without one you get plain charcoal.
+> The included `wallpaper.png` is set automatically — swap in your own to change it, or delete it for plain charcoal.
 
 ## What you get
 
@@ -69,4 +69,10 @@ zsh dune/mac-setup.sh --undo
 
 Turns Apple services back on and removes the hosts block, Firefox policies, square corners, Spotlight exclusions and file limits.
 
-<div align="center"><sub>MIT · built for a fresh Mac · safe to re-run</sub></div>
+## Credits
+
+**Wallpaper** — *Silent Hill 3* (Heather Mason) inspired artwork, found on [Wallhaven #qroy2d](https://wallhaven.cc/w/qroy2d), uploaded by **Cyb3RPh30nix**. The original artist isn't listed there; if it's yours, open an issue and it'll be credited properly or removed. The wallpaper is not covered by the MIT license.
+
+Fonts, apps and tools belong to their authors — see the links in the table above.
+
+<div align="center"><sub>MIT (code only) · built for a fresh Mac · safe to re-run</sub></div>
