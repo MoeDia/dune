@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mac Quickstart</title>
+<style>
+:root{--bg:#121216;--s1:#1a1a20;--s2:#26262e;--line:#33333c;--dim:#8e8e9c;--mu:#b0b0bd;--fg:#ececf1;--acc:#ff5f45;--kw:#ff8a6b;--num:#ffc27a;--fn:#6cc4f0;--str:#b5d18a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font:14px/1.5 "CommitMono","SF Mono",ui-monospace,Menlo,monospace;padding:28px 16px 48px}
+main{max-width:1180px;margin:0 auto}
+header{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:22px}
+h1{font-size:20px;font-weight:700;letter-spacing:.02em}h1 b{color:var(--acc)}
+header p{color:var(--dim)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+section{background:var(--s1);border:1px solid var(--line);padding:14px 16px}
+h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:10px;display:flex;justify-content:space-between}
+h2 span{color:var(--dim);letter-spacing:.04em;text-transform:none}
+table{width:100%;border-collapse:collapse}
+td{padding:3px 0;vertical-align:top}td:first-child{white-space:nowrap;padding-right:14px;width:1%}
+kbd,code{font:inherit;color:var(--kw)}
+kbd{background:var(--s2);border:1px solid var(--line);padding:0 5px;font-size:12.5px;color:var(--fg)}
+.m{color:var(--mu)}.d{color:var(--dim)}
+.wide{grid-column:1/-1}
+.row{display:flex;gap:28px;flex-wrap:wrap}.row>div{flex:1;min-width:260px}
+footer{margin-top:22px;color:var(--dim);font-size:12.5px}
+</style></head><body><main>
+
+<header><h1>mac<b>/</b>quickstart</h1><p>everything installed by mac-setup · keys and the one command you need for each</p></header>
+
+<div class="grid">
+
+<section class="wide"><h2>The script <span>mac-kit/mac-setup.sh</span></h2><div class="row">
+<div><table>
+<tr><td><code>zsh dune/mac-setup.sh</code></td><td class="m">set up (safe to re-run)</td></tr>
+<tr><td><code>zsh dune/mac-setup.sh --check</code></td><td class="m">checklist only, changes nothing — run once after the reboot</td></tr>
+<tr><td><code>zsh dune/mac-setup.sh --undo</code></td><td class="m">restore Apple services &amp; system tweaks</td></tr></table></div>
+<div><table>
+<tr><td><code>update</code></td><td class="m">the only way anything updates: apps, tools, malware definitions, macOS list</td></tr>
+<tr><td><code>~/mac-setup.log</code></td><td class="m">full log of every run</td></tr>
+<tr><td><code>~/.zshrc.local</code></td><td class="m">your own shell additions (never overwritten)</td></tr></table></div>
+</div></section>
+
+<section><h2>Windows <span>AeroSpace</span></h2><table>
+<tr><td><kbd>⌥ H J K L</kbd></td><td class="m">focus left / down / up / right</td></tr>
+<tr><td><kbd>⌥⇧ H J K L</kbd></td><td class="m">move window</td></tr>
+<tr><td><kbd>⌥ 1–5</kbd></td><td class="m">switch workspace</td></tr>
+<tr><td><kbd>⌥⇧ 1–5</kbd></td><td class="m">send window to workspace</td></tr>
+<tr><td><kbd>⌥ /</kbd> <kbd>⌥ ,</kbd></td><td class="m">tiles · accordion layout</td></tr>
+<tr><td><kbd>⌥ -</kbd> <kbd>⌥ =</kbd></td><td class="m">shrink · grow</td></tr>
+<tr><td><kbd>⌥⇧ F</kbd></td><td class="m">fullscreen</td></tr>
+<tr><td><kbd>⌥⇧ ;</kbd> then <kbd>F</kbd></td><td class="m">float / tile this window (<kbd>R</kbd> reset, <kbd>Esc</kbd> reload)</td></tr></table></section>
+
+<section><h2>Desktop <span>macOS</span></h2><table>
+<tr><td>left edge</td><td class="m">Dock slides in</td></tr>
+<tr><td>top edge</td><td class="m">menu bar slides in</td></tr>
+<tr><td><kbd>⌥ ⇥</kbd></td><td class="m">AltTab: switch windows</td></tr>
+<tr><td><kbd>⇧⌘ C</kbd></td><td class="m">Maccy: clipboard history</td></tr>
+<tr><td><kbd>⌃⇧⌘ 4</kbd></td><td class="m">screenshot area → clipboard</td></tr>
+<tr><td><kbd>⇧⌘ 4</kbd></td><td class="m">screenshot area → ~/Pictures/Screenshots</td></tr>
+<tr><td>double-click title</td><td class="m">minimize · scroll up on Dock icon: its windows</td></tr>
+<tr><td>Keka</td><td class="m">double-click any .zip .7z .rar to extract</td></tr></table></section>
+
+<section><h2>Terminal <span>Ghostty</span></h2><table>
+<tr><td><kbd>⌘ T</kbd></td><td class="m">new tab</td></tr>
+<tr><td><kbd>⌘ D</kbd> <kbd>⇧⌘ D</kbd></td><td class="m">split right · split down</td></tr>
+<tr><td><kbd>⌥⌘ ←↑↓→</kbd></td><td class="m">move between splits</td></tr>
+<tr><td><kbd>⇧⌘ ↩</kbd></td><td class="m">zoom split</td></tr>
+<tr><td>select text</td><td class="m">copies automatically</td></tr>
+<tr><td><code>herdr</code></td><td class="m">workspaces + agents; prefix <kbd>⌃ B</kbd> (tmux-style) · keys: <code>herdr --default-config</code></td></tr></table></section>
+
+<section><h2>Shell <span>zsh</span></h2><table>
+<tr><td><code>cd proj</code></td><td class="m">jumps to the best-matching folder you've visited (zoxide)</td></tr>
+<tr><td><code>cdi</code></td><td class="m">pick a folder interactively</td></tr>
+<tr><td><kbd>⌃ R</kbd></td><td class="m">fuzzy search history</td></tr>
+<tr><td><kbd>⌃ T</kbd> <kbd>⌥ C</kbd></td><td class="m">insert a file · cd into a folder (fzf)</td></tr>
+<tr><td><kbd>→</kbd></td><td class="m">accept the grey suggestion</td></tr>
+<tr><td><code>ls ll la tree</code></td><td class="m">eza listings</td></tr>
+<tr><td><code>cat</code> · <code>top</code></td><td class="m">bat (highlighted) · btop</td></tr>
+<tr><td><code>rg text</code> · <code>fd name</code></td><td class="m">search inside files · find files</td></tr></table></section>
+
+<section><h2>Editor <span>Neovim · leader = Space</span></h2><table>
+<tr><td><code>vim file</code></td><td class="m">opens Neovim</td></tr>
+<tr><td><kbd>Space E</kbd></td><td class="m">file explorer</td></tr>
+<tr><td><kbd>Space W</kbd> · <kbd>Space Q</kbd></td><td class="m">save · quit</td></tr>
+<tr><td><kbd>Space Y</kbd></td><td class="m">copy selection to system clipboard</td></tr>
+<tr><td><kbd>Esc</kbd></td><td class="m">clear search highlight</td></tr>
+<tr><td class="d">note</td><td class="m">yank/paste already use the system clipboard; undo survives restarts</td></tr></table></section>
+
+<section><h2>Code <span>git · Claude · runtimes</span></h2><table>
+<tr><td><code>claude</code></td><td class="m">Claude Code in the current project</td></tr>
+<tr><td><code>lg</code></td><td class="m">lazygit: stage, commit, push with keys</td></tr>
+<tr><td><code>gh auth login</code></td><td class="m">connect GitHub once</td></tr>
+<tr><td><code>git diff</code></td><td class="m">side-numbered diffs via delta (<kbd>n</kbd>/<kbd>N</kbd> jump)</td></tr>
+<tr><td><code>mise use -g node@lts</code></td><td class="m">install a global Node (same for python@3.13, go…)</td></tr>
+<tr><td><code>mise use python@3.13</code></td><td class="m">pin a version for this project</td></tr></table></section>
+
+<section><h2>Containers <span>Colima + docker</span></h2><table>
+<tr><td><code>colima start</code></td><td class="m">start the Linux VM (once per boot)</td></tr>
+<tr><td><code>docker run hello-world</code></td><td class="m">test it</td></tr>
+<tr><td><code>docker compose up</code></td><td class="m">compose works as usual</td></tr>
+<tr><td><code>colima stop</code></td><td class="m">free the RAM when done</td></tr></table></section>
+
+<section><h2>Apps</h2><table>
+<tr><td>Firefox</td><td class="m">uBlock &amp; Proton Pass live behind the puzzle-piece button</td></tr>
+<tr><td>mpv</td><td class="m"><kbd>Space</kbd> pause · <kbd>← →</kbd> seek · <kbd>F</kbd> fullscreen · <kbd>Q</kbd> quit &amp; remember spot</td></tr>
+<tr><td><code>mpv URL</code></td><td class="m">stream any video link (yt-dlp, up to 4K) · <code>yt-dlp URL</code> to download</td></tr>
+<tr><td><code>ffmpeg</code></td><td class="m">convert anything: <code>ffmpeg -i in.mov out.mp4</code></td></tr>
+<tr><td>Transmission</td><td class="m">click a magnet link or open a .torrent</td></tr>
+<tr><td>LocalSend</td><td class="m">open on both devices, same Wi-Fi, send</td></tr>
+<tr><td>LuLu</td><td class="m">asks when an app goes online: Allow / Block, remembered</td></tr>
+<tr><td><code>fastfetch</code></td><td class="m">system summary</td></tr></table></section>
+
+</div>
+<footer>Updates are manual everywhere: run <code>update</code> now and then. Changed your mind? <code>--undo</code> reverts the system tweaks; re-running the script brings them back.</footer>
+</main></body></html>
