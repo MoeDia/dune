@@ -6,7 +6,7 @@
 
 Coral on charcoal · square windows · no Liquid Glass · no Apple bloat · no surprise updates
 
-<img src="docs/preview-2.png" alt="Ghostty with herdr, Neovim and Claude Code" width="100%">
+<img src="docs/render-1.png" alt="The desktop: no menu bar, no Dock, just the wallpaper" width="100%">
 
 </div>
 
@@ -42,7 +42,19 @@ zsh dune/mac-setup.sh --check     # confirms everything, changes nothing
 | **Speed** | No animations, More Space display, raised file limits, Spotlight skips caches and build folders |
 | **Updates** | Nothing updates by itself. Run `update` when *you* want: apps, tools, malware definitions, macOS list |
 
-<img src="docs/preview-6.png" alt="lazygit, fastfetch and the shell" width="100%">
+## Screens
+
+<img src="docs/render-2.png" alt="Ghostty with herdr, Neovim and Claude Code" width="100%">
+
+<table><tr>
+<td><img src="docs/render-3.png" alt="lazygit, fastfetch and the shell"></td>
+<td><img src="docs/render-4.png" alt="mpv, Transmission and LocalSend"></td>
+</tr><tr>
+<td align="center"><sub>lazygit · fastfetch · eza</sub></td>
+<td align="center"><sub>mpv · Transmission · LocalSend</sub></td>
+</tr></table>
+
+<sub>Renders of the finished setup at 1680×1050 (More Space).</sub>
 
 ## Cheat sheet
 
@@ -72,6 +84,8 @@ Turns Apple services back on and removes the hosts block, Firefox policies, squa
 ## Credits
 
 **Wallpaper** — *Silent Hill 3* (Heather Mason) inspired artwork, found on [Wallhaven #qroy2d](https://wallhaven.cc/w/qroy2d), uploaded by **Cyb3RPh30nix**. The original artist isn't listed there; if it's yours, open an issue and it'll be credited properly or removed. The wallpaper is not covered by the MIT license.
+
+**Video still** — *Big Buck Bunny* © Blender Foundation, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
 
 Fonts, apps and tools belong to their authors — see the links in the table above.
 
